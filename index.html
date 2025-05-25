@@ -11,9 +11,11 @@
             box-sizing: border-box;
             font-family: Arial, sans-serif;
         }
+
         body {
             background-color: #f8f9fa;
         }
+
         .app-container {
             max-width: 390px;
             height: 100vh;
@@ -23,6 +25,7 @@
             display: flex;
             flex-direction: column;
         }
+
         .header {
             background-color: #eb2529;
             padding: 16px;
@@ -31,28 +34,34 @@
             align-items: center;
             color: white;
         }
+
         .screen-content {
             background-color: #eb2529;
             padding: 16px;
             height: calc(100% - 64px);
             overflow-y: auto;
         }
+
         .logo-container {
             width: 40%;
             text-align: left;
         }
-        .logo-container img {
-            height: 40px;
-        }
+
+            .logo-container img {
+                height: 40px;
+            }
+
         .location-container {
             display: flex;
             align-items: center;
             font-size: 14px;
         }
+
         .location-icon {
             margin-right: 6px;
             font-size: 18px;
         }
+
         .alert-box {
             background-color: #FFC72C;
             padding: 10px;
@@ -61,11 +70,13 @@
             border-radius: 5px;
             font-weight: bold;
         }
+
         .content {
             flex: 1;
             padding: 0 16px 16px;
             overflow-y: auto;
         }
+
         .beer-banner {
             background-color: white;
             border-radius: 8px;
@@ -73,13 +84,15 @@
             margin-bottom: 24px;
             cursor: pointer;
         }
-        .beer-banner img {
-            width: 100%;
-            height: 100%;
-            display: block;
-            margin: 0 auto;
-            border-radius: 4px;
-        }
+
+            .beer-banner img {
+                width: 100%;
+                height: 100%;
+                display: block;
+                margin: 0 auto;
+                border-radius: 4px;
+            }
+
         .menu-title {
             color: white;
             text-align: center;
@@ -87,12 +100,14 @@
             margin-bottom: 20px;
             font-size: 1.2rem;
         }
+
         .menu-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 16px;
             margin-bottom: 40px;
         }
+
         .menu-item {
             background-color: white;
             border: 2px solid #FFC72C;
@@ -105,19 +120,23 @@
             justify-content: center;
             cursor: pointer;
         }
-        .menu-item.special {
-            background-color: #FFC72C;
-        }
+
+            .menu-item.special {
+                background-color: #FFC72C;
+            }
+
         .menu-item-icon {
             font-size: 36px;
             margin-bottom: 12px;
             color: #eb2529;
         }
+
         .menu-item-text {
             color: #eb2529;
             font-weight: 600;
             text-align: center;
         }
+
         .footer {
             background-color: #FFC72C;
             padding: 12px;
@@ -126,13 +145,16 @@
             font-size: 0.875rem;
             margin-top: auto;
         }
+
         .screen {
             display: none;
             height: 100%;
         }
-        .screen.active {
-            display: block;
-        }
+
+            .screen.active {
+                display: block;
+            }
+
         .screen-header {
             background-color: #eb2529;
             padding: 16px;
@@ -140,6 +162,7 @@
             align-items: center;
             color: white;
         }
+
         .back-button {
             background: none;
             border: none;
@@ -148,6 +171,7 @@
             margin-right: 16px;
             cursor: pointer;
         }
+
         .menu-section {
             background-color: white;
             border-radius: 8px;
@@ -155,9 +179,11 @@
             margin-bottom: 16px;
             width: 100%;
         }
-        .menu-section:last-child {
-            margin-bottom: 0;
-        }
+
+            .menu-section:last-child {
+                margin-bottom: 0;
+            }
+
         .section-title {
             color: #006400;
             font-weight: bold;
@@ -166,6 +192,7 @@
             padding-bottom: 5px;
             border-bottom: 1px solid #eee;
         }
+
         .section-banner {
             width: 100%;
             height: 64px;
@@ -174,73 +201,79 @@
             margin-bottom: 12px;
             object-fit: cover;
         }
+
         .menu-list {
             list-style: none;
             width: 100%;
         }
-     .menu-list-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 12px;
-    width: 100%;
-    padding: 8px 0;
-}
+
+        .menu-list-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            width: 100%;
+            padding: 8px 0;
+        }
 
 
-.menu-item-info {
-    flex: 1;
-    min-width: 0;
-    padding-right: 10px;
-}
+        .menu-item-info {
+            flex: 1;
+            min-width: 0;
+            padding-right: 10px;
+        }
 
-.menu-item-name {
-    font-weight: 500;
-    color: #333;
-    line-height: 1.3;
-    word-wrap: break-word;
-}
+        .menu-item-name {
+            font-weight: 500;
+            color: #333;
+            line-height: 1.3;
+            word-wrap: break-word;
+        }
 
-.price-controls-container {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    flex-shrink: 0;
-    min-width: 120px;
-}
+        .price-controls-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-shrink: 0;
+            min-width: 120px;
+        }
 
-.item-price {
-    font-weight: 600;
-    color: #eb2529;
-    font-size: 16px;
-    min-width: 60px;
-    text-align: right;
-}
+        .item-price {
+            font-weight: 600;
+            color: #eb2529;
+            font-size: 16px;
+            min-width: 60px;
+            text-align: right;
+        }
 
-.item-controls {
-    min-width: 50px;
-    display: flex;
-    justify-content: center;
-}
+        .item-controls {
+            min-width: 50px;
+            display: flex;
+            justify-content: center;
+        }
+
         #alcohol-screen .menu-list-item {
             width: 100%;
             display: flex;
             justify-content: space-between;
         }
-      .menu-list-item span:first-child {
-    flex: 1;
-    min-width: 60%;
-    max-width: 70%;         
-    word-wrap: break-word;  
-}
+
+        .menu-list-item span:first-child {
+            flex: 1;
+            min-width: 60%;
+            max-width: 70%;
+            word-wrap: break-word;
+        }
 
         .menu-list-item span:last-child {
             text-align: right;
             min-width: 60px;
         }
+
         .menu-list-item:last-child {
             margin-bottom: 0;
         }
+
         .offer-card {
             background-color: #FFC72C;
             border: 2px solid white;
@@ -249,26 +282,31 @@
             margin-bottom: 16px;
             cursor: pointer;
         }
-        .offer-card h2 {
-            color: #eb2529;
-            font-weight: bold;
-            font-size: 1.125rem;
-            margin-bottom: 8px;
-        }
-        .offer-card p {
-            color: #000;
-            margin-bottom: 8px;
-        }
-        .offer-card .claim {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-        }
-        .offer-card .claim span {
-            color: #eb2529;
-            font-weight: 500;
-            margin-right: 4px;
-        }
+
+            .offer-card h2 {
+                color: #eb2529;
+                font-weight: bold;
+                font-size: 1.125rem;
+                margin-bottom: 8px;
+            }
+
+            .offer-card p {
+                color: #000;
+                margin-bottom: 8px;
+            }
+
+            .offer-card .claim {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+
+                .offer-card .claim span {
+                    color: #eb2529;
+                    font-weight: 500;
+                    margin-right: 4px;
+                }
+
         .featured {
             background-color: #FEF9E7;
             border-left: 3px solid #FFC72C;
@@ -296,63 +334,65 @@
             text-align: center;
         }
 
-     .add-to-cart-btn {
-    background-color: #eb2529;
-    color: white;
-    border: none;
-    padding: 6px 12px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 12px;
-    font-weight: bold;
-    white-space: nowrap;
-    min-width: 45px;
-    transition: background-color 0.2s;
-}
-        .add-to-cart-btn:hover {
-            background-color: #a01519;
+        .add-to-cart-btn {
+            background-color: #eb2529;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: bold;
+            white-space: nowrap;
+            min-width: 45px;
+            transition: background-color 0.2s;
         }
 
-.menu-list-item {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 12px;
-    width: 100%;
-    align-items: center;
-    flex-wrap: wrap;
-}
+            .add-to-cart-btn:hover {
+                background-color: #a01519;
+            }
+
+        .menu-list-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 12px;
+            width: 100%;
+            align-items: center;
+            flex-wrap: wrap;
+        }
 
 
-      .quantity-controls {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    min-width: 80px;
-    justify-content: center;
-}
+        .quantity-controls {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            min-width: 80px;
+            justify-content: center;
+        }
 
-.quantity-btn {
-    background-color: #eb2529;
-    color: white;
-    border: none;
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.2s;
-}
+        .quantity-btn {
+            background-color: #eb2529;
+            color: white;
+            border: none;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.2s;
+        }
 
-.quantity-controls span {
-    min-width: 20px;
-    text-align: center;
-    font-weight: 600;
-    font-size: 14px;
-}
+        .quantity-controls span {
+            min-width: 20px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
         .cart-item {
             background-color: white;
             padding: 16px;
@@ -385,11 +425,11 @@
             text-align: center;
         }
 
-        .cart-total h3 {
-            color: #eb2529;
-            font-size: 1.2rem;
-            margin-bottom: 8px;
-        }
+            .cart-total h3 {
+                color: #eb2529;
+                font-size: 1.2rem;
+                margin-bottom: 8px;
+            }
 
         .order-btn {
             background-color: #eb2529;
@@ -413,12 +453,14 @@
             font-size: 64px;
             margin-bottom: 16px;
         }
+
         .size-selector {
             display: flex;
             gap: 5px;
             margin-top: 5px;
             flex-wrap: wrap;
         }
+
         .size-btn {
             background-color: #f0f0f0;
             border: 1px solid #ddd;
@@ -429,17 +471,20 @@
             transition: all 0.2s;
             white-space: nowrap;
         }
-        .size-btn.selected {
-            background-color: #eb2529;
-            color: white;
-            border-color: #eb2529;
-        }
-        .size-btn:hover {
-            background-color: #e0e0e0;
-        }
-        .size-btn.selected:hover {
-            background-color: #a01519;
-        }
+
+            .size-btn.selected {
+                background-color: #eb2529;
+                color: white;
+                border-color: #eb2529;
+            }
+
+            .size-btn:hover {
+                background-color: #e0e0e0;
+            }
+
+            .size-btn.selected:hover {
+                background-color: #a01519;
+            }
     </style>
 
 </head>
@@ -449,7 +494,7 @@
         <div id="home-screen" class="screen active">
             <div class="header">
                 <div class="logo-container">
-                    <h1>WELCOME!</h1>
+                    <h1>WELCOME</h1>
                 </div>
                 
                 <div class="cart-icon" onclick="showScreen('cart')">
@@ -498,7 +543,45 @@
                 </div>
             </div>
             <div class="screen-content">
-            <!-- BEER SECTION -->
+                <div class="menu-section">
+                    <h2 class="section-title">TRENDING NOW</h2>
+                    <ul class="menu-list">
+                        <li class="menu-list-item featured">
+                            <div class="menu-item-info">
+                                <div class="menu-item-name">King Fisher Premium</div>
+                            </div>
+                            <div class="price-controls-container">
+                                <div class="item-price">₹340</div>
+                                <div class="item-controls" data-name="King Fisher Premium" data-price="340">
+                                    <button class="add-to-cart-btn" onclick="addToCart(this)">Add</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu-list-item featured">
+                            <div class="menu-item-info">
+                                <div class="menu-item-name">Heineken</div>
+                            </div>
+                            <div class="price-controls-container">
+                                <div class="item-price">₹380</div>
+                                <div class="item-controls" data-name="Heineken" data-price="380">
+                                    <button class="add-to-cart-btn" onclick="addToCart(this)">Add</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu-list-item featured">
+                            <div class="menu-item-info">
+                                <div class="menu-item-name">Amstel</div>
+                            </div>
+                            <div class="price-controls-container">
+                                <div class="item-price">₹360</div>
+                                <div class="item-controls" data-name="Amstel" data-price="360">
+                                    <button class="add-to-cart-btn" onclick="addToCart(this)">Add</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- BEER SECTION -->
                 <div class="menu-section">
                     <h3 style="color:#B22222; margin:10px 0 4px 0;">STRONG BEER</h3>
                     <ul class="menu-list">
@@ -530,6 +613,110 @@
                         <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Carlsberg Tin (330 Ml.)</div></div><div class="price-controls-container"><div class="item-price">₹190</div><div class="item-controls" data-name="Carlsberg Tin (330 Ml.)" data-price="190"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
                         <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Carlsberg Tin (500 Ml.)</div></div><div class="price-controls-container"><div class="item-price">₹250</div><div class="item-controls" data-name="Carlsberg Tin (500 Ml.)" data-price="250"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
                         <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Budweiser Mild (500 Ml.)</div></div><div class="price-controls-container"><div class="item-price">₹300</div><div class="item-controls" data-name="Budweiser Mild (500 Ml.)" data-price="300"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
+                    </ul>
+                </div>
+                <div class="menu-section">
+                    <h2 class="section-title" style="color: #006400;">COLD DRINKS</h2>
+                    <ul class="menu-list">
+                        <li class="menu-list-item">
+                            <div class="menu-item-info">
+                                <div class="menu-item-name">Mineral Water (1 Ltr. / 500 Ml.)</div>
+                            </div>
+                            <div class="price-controls-container">
+                                <div class="item-price">₹20</div>
+                                <div class="item-controls" data-name="Mineral Water (1 Ltr. / 500 Ml.)" data-price="20">
+                                    <button class="add-to-cart-btn" onclick="addToCart(this)">Add</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu-list-item">
+                            <div class="menu-item-info">
+                                <div class="menu-item-name">Mineral Water (1 Ltr. / 500 Ml.)</div>
+                            </div>
+                            <div class="price-controls-container">
+                                <div class="item-price">₹30</div>
+                                <div class="item-controls" data-name="Mineral Water (1 Ltr. / 500 Ml.)" data-price="30">
+                                    <button class="add-to-cart-btn" onclick="addToCart(this)">Add</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu-list-item">
+                            <div class="menu-item-info">
+                                <div class="menu-item-name">Fresh Lime Water</div>
+                            </div>
+                            <div class="price-controls-container">
+                                <div class="item-price">₹30</div>
+                                <div class="item-controls" data-name="Fresh Lime Water" data-price="30">
+                                    <button class="add-to-cart-btn" onclick="addToCart(this)">Add</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu-list-item">
+                            <div class="menu-item-info">
+                                <div class="menu-item-name">Soda</div>
+                            </div>
+                            <div class="price-controls-container">
+                                <div class="item-price">₹25</div>
+                                <div class="item-controls" data-name="Soda" data-price="25">
+                                    <button class="add-to-cart-btn" onclick="addToCart(this)">Add</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu-list-item">
+                            <div class="menu-item-info">
+                                <div class="menu-item-name">Soda (500 Ml.)</div>
+                            </div>
+                            <div class="price-controls-container">
+                                <div class="item-price">₹35</div>
+                                <div class="item-controls" data-name="Soda (500 Ml.)" data-price="35">
+                                    <button class="add-to-cart-btn" onclick="addToCart(this)">Add</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu-list-item">
+                            <div class="menu-item-info">
+                                <div class="menu-item-name">Fresh Lime Soda</div>
+                            </div>
+                            <div class="price-controls-container">
+                                <div class="item-price">₹35</div>
+                                <div class="item-controls" data-name="Fresh Lime Soda" data-price="35">
+                                    <button class="add-to-cart-btn" onclick="addToCart(this)">Add</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu-list-item">
+                            <div class="menu-item-info">
+                                <div class="menu-item-name">Soft Drinks</div>
+                            </div>
+                            <div class="price-controls-container">
+                                <div class="item-price">₹95</div>
+                                <div class="item-controls" data-name="Soft Drinks" data-price="95">
+                                    <button class="add-to-cart-btn" onclick="addToCart(this)">Add</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu-list-item">
+                            <div class="menu-item-info">
+                                <div class="menu-item-name">Soft Drinks (500 ML.)</div>
+                            </div>
+                            <div class="price-controls-container">
+                                <div class="item-price">₹60</div>
+                                <div class="item-controls" data-name="Soft Drinks (500 ML.)" data-price="60">
+                                    <button class="add-to-cart-btn" onclick="addToCart(this)">Add</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu-list-item">
+                            <div class="menu-item-info">
+                                <div class="menu-item-name">Lassi (Sweet & Salted)</div>
+                            </div>
+                            <div class="price-controls-container">
+                                <div class="item-price">₹60</div>
+                                <div class="item-controls" data-name="Lassi (Sweet & Salted)" data-price="60">
+                                    <button class="add-to-cart-btn" onclick="addToCart(this)">Add</button>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -711,20 +898,20 @@
                 <div class="menu-section">
                     <h2 class="section-title" style="color: #B22222;">TANDOORI</h2>
                     <ul class="menu-list">
-                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Roti</div></div><div class="price-controls-container"><div class="item-price">₹40</div><div class="item-controls" data-name="Roti" data-price="40"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
-                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Naan</div></div><div class="price-controls-container"><div class="item-price">₹45</div><div class="item-controls" data-name="Naan" data-price="45"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
-                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Paratha</div></div><div class="price-controls-container"><div class="item-price">₹45</div><div class="item-controls" data-name="Paratha" data-price="45"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
-                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Butter Roti.</div></div><div class="price-controls-container"><div class="item-price">₹50</div><div class="item-controls" data-name="Butter Roti." data-price="50"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
-                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Butter Naan.</div></div><div class="price-controls-container"><div class="item-price">₹55</div><div class="item-controls" data-name="Butter Naan." data-price="55"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
-                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Butter Paratha.</div></div><div class="price-controls-container"><div class="item-price">₹55</div><div class="item-controls" data-name="Butter Paratha." data-price="55"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
-                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Kulcha</div></div><div class="price-controls-container"><div class="item-price">₹40</div><div class="item-controls" data-name="Kulcha" data-price="40"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
-                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Butter Kulcha</div></div><div class="price-controls-container"><div class="item-price">₹55</div><div class="item-controls" data-name="Butter Kulcha" data-price="55"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
+                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Roti</div></div><div class="price-controls-container"><div class="item-price">₹30</div><div class="item-controls" data-name="Roti" data-price="30"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
+                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Naan</div></div><div class="price-controls-container"><div class="item-price">₹35</div><div class="item-controls" data-name="Naan" data-price="35"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
+                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Paratha</div></div><div class="price-controls-container"><div class="item-price">₹35</div><div class="item-controls" data-name="Paratha" data-price="35"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
+                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Butter Roti.</div></div><div class="price-controls-container"><div class="item-price">₹35</div><div class="item-controls" data-name="Butter Roti." data-price="35"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
+                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Butter Naan.</div></div><div class="price-controls-container"><div class="item-price">₹40</div><div class="item-controls" data-name="Butter Naan." data-price="40"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
+                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Butter Paratha.</div></div><div class="price-controls-container"><div class="item-price">₹40</div><div class="item-controls" data-name="Butter Paratha." data-price="40"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
+                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Kulcha</div></div><div class="price-controls-container"><div class="item-price">₹35</div><div class="item-controls" data-name="Kulcha" data-price="35"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
+                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Butter Kulcha</div></div><div class="price-controls-container"><div class="item-price">₹40</div><div class="item-controls" data-name="Butter Kulcha" data-price="40"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
                         <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Stuff Kulcha</div></div><div class="price-controls-container"><div class="item-price">₹90</div><div class="item-controls" data-name="Stuff Kulcha" data-price="90"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
                         <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Stuff Paratha.</div></div><div class="price-controls-container"><div class="item-price">₹90</div><div class="item-controls" data-name="Stuff Paratha." data-price="90"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
                         <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Cheese Naan.</div></div><div class="price-controls-container"><div class="item-price">₹100</div><div class="item-controls" data-name="Cheese Naan." data-price="100"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
                         <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Garlic Naan.</div></div><div class="price-controls-container"><div class="item-price">₹100</div><div class="item-controls" data-name="Garlic Naan." data-price="100"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
                         <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Cheese Garlic Naan</div></div><div class="price-controls-container"><div class="item-price">₹130</div><div class="item-controls" data-name="Cheese Garlic Naan" data-price="130"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
-                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Kheema Paratha.</div></div><div class="price-controls-container"><div class="item-price">₹120</div><div class="item-controls" data-name="Kheema Paratha." data-price="120"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
+                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Kheema Paratha.</div></div><div class="price-controls-container"><div class="item-price">₹130</div><div class="item-controls" data-name="Kheema Paratha." data-price="130"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
                         <li class="menu-list-item">
                             <div class="menu-item-info">
                                 <div class="menu-item-name">Tandoori Chicken (Full)</div>
@@ -818,7 +1005,7 @@
                         <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Egg Biryani</div></div><div class="price-controls-container"><div class="item-price">₹190</div><div class="item-controls" data-name="Egg Biryani" data-price="190"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
                         <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Egg Pulav.</div></div><div class="price-controls-container"><div class="item-price">₹180</div><div class="item-controls" data-name="Egg Pulav." data-price="180"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
                         <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Veg. Hyderabadi Biryani</div></div><div class="price-controls-container"><div class="item-price">₹220</div><div class="item-controls" data-name="Veg. Hyderabadi Biryani" data-price="220"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
-                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Chicken Hyderabadi Biryani.</div></div><div class="price-controls-container"><div class="item-price">260</div><div class="item-controls" data-name="Chicken Hyderabadi Biryani." data-price="260"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
+                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Chicken Hyderabadi Biryani.</div></div><div class="price-controls-container"><div class="item-price">₹260</div><div class="item-controls" data-name="Chicken Hyderabadi Biryani." data-price="260"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
                         <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Dal Khichadi</div></div><div class="price-controls-container"><div class="item-price">₹190</div><div class="item-controls" data-name="Dal Khichadi" data-price="190"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
                         <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Palak Khichadi</div></div><div class="price-controls-container"><div class="item-price">₹190</div><div class="item-controls" data-name="Palak Khichadi" data-price="190"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
                     </ul>
@@ -833,8 +1020,8 @@
                                 <div class="menu-item-name">Chicken Lollipop (Full)</div>
                             </div>
                             <div class="price-controls-container">
-                                <div class="item-price">₹220</div>
-                                <div class="item-controls" data-name="Chicken Lollipop (Full)" data-price="220">
+                                <div class="item-price">₹230</div>
+                                <div class="item-controls" data-name="Chicken Lollipop (Full)" data-price="230">
                                     <button class="add-to-cart-btn" onclick="addToCart(this)">Add</button>
                                 </div>
                             </div>
@@ -852,8 +1039,8 @@
                         </li>
                         <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Chicken Schezwan</div></div><div class="price-controls-container"><div class="item-price">₹220</div><div class="item-controls" data-name="Chicken Schezwan" data-price="220"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
                         <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Chicken Hong Kong</div></div><div class="price-controls-container"><div class="item-price">₹220</div><div class="item-controls" data-name="Chicken Hong Kong" data-price="220"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
-                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Chicken Singapore.</div></div><div class="price-controls-container"><div class="item-price">₹210</div><div class="item-controls" data-name="Chicken Singapore." data-price="210"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
-                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Chicken Mangolian</div></div><div class="price-controls-container"><div class="item-price">₹200</div><div class="item-controls" data-name="Chicken Mangolian" data-price="200"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
+                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Chicken Singapore.</div></div><div class="price-controls-container"><div class="item-price">₹220</div><div class="item-controls" data-name="Chicken Singapore." data-price="220"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
+                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Chicken Mangolian</div></div><div class="price-controls-container"><div class="item-price">₹210</div><div class="item-controls" data-name="Chicken Mangolian" data-price="210"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
                         <li class="menu-list-item">
                             <div class="menu-item-info">
                                 <div class="menu-item-name">Chicken Chilly (Full)</div>
@@ -878,24 +1065,35 @@
                         </li>
                         <li class="menu-list-item">
                             <div class="menu-item-info">
-                                <div class="menu-item-name">Chicken Manchurian (Full / Half)</div>
+                                <div class="menu-item-name">Chicken Manchurian (Full)</div>
+                            </div>
+                            <div class="price-controls-container">
+                                <div class="item-price">₹200</div>
+                                <div class="item-controls" data-name="Chicken Manchurian (Full)" data-price="200" data-size="Half">
+                                    <button class="add-to-cart-btn" onclick="addToCart(this)">Add</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu-list-item">
+                            <div class="menu-item-info">
+                                <div class="menu-item-name">Chicken Manchurian (Half)</div>
                             </div>
                             <div class="price-controls-container">
                                 <div class="item-price">₹140</div>
-                                <div class="item-controls" data-name="Chicken Manchurian" data-price="140" data-size="Half">
+                                <div class="item-controls" data-name="Chicken Manchurian (Half)" data-price="140" data-size="Half">
                                     <button class="add-to-cart-btn" onclick="addToCart(this)">Add</button>
                                 </div>
                             </div>
                         </li>
                         <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Chicken Garlic</div></div><div class="price-controls-container"><div class="item-price">₹240</div><div class="item-controls" data-name="Chicken Garlic" data-price="240"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
-                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Chicken 65</div></div><div class="price-controls-container"><div class="item-price">₹220</div><div class="item-controls" data-name="Chicken 65" data-price="220"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
-                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Chicken Sweet & Sour</div></div><div class="price-controls-container"><div class="item-price">₹210</div><div class="item-controls" data-name="Chicken Sweet & Sour" data-price="210"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
-                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Chicken Spring Roll</div></div><div class="price-controls-container"><div class="item-price">₹200</div><div class="item-controls" data-name="Chicken Spring Roll" data-price="200"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
-                         <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Veg. In Hot Garlic Sauce</div></div><div class="price-controls-container"><div class="item-price">₹190</div><div class="item-controls" data-name="Veg. In Hot Garlic Sauce" data-price="190"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
-                         <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Veg. Balls In Garlic Sauce</div></div><div class="price-controls-container"><div class="item-price">₹200</div><div class="item-controls" data-name="Veg. Balls In Garlic Sauce" data-price="200"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
-                         <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Veg. Chowmein.</div></div><div class="price-controls-container"><div class="item-price">₹200</div><div class="item-controls" data-name="Veg. Chowmein." data-price="200"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
-                         <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Veg. Schezwan.</div></div><div class="price-controls-container"><div class="item-price">₹200</div><div class="item-controls" data-name="Veg. Schezwan." data-price="200"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
-                         <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Veg. Manchurian.</div></div><div class="price-controls-container"><div class="item-price">₹190</div><div class="item-controls" data-name="Veg. Manchurian." data-price="190"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
+                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Chicken 65</div></div><div class="price-controls-container"><div class="item-price">₹240</div><div class="item-controls" data-name="Chicken 65" data-price="240"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
+                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Chicken Sweet & Sour</div></div><div class="price-controls-container"><div class="item-price">₹220</div><div class="item-controls" data-name="Chicken Sweet & Sour" data-price="220"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
+                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Chicken Spring Roll</div></div><div class="price-controls-container"><div class="item-price">₹210</div><div class="item-controls" data-name="Chicken Spring Roll" data-price="210"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
+                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Veg. Balls In Garlic Sauce</div></div><div class="price-controls-container"><div class="item-price">₹200</div><div class="item-controls" data-name="Veg. Balls In Garlic Sauce" data-price="200"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
+                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Veg. Chowmein.</div></div><div class="price-controls-container"><div class="item-price">₹200</div><div class="item-controls" data-name="Veg. Chowmein." data-price="200"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
+                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Veg. Schezwan.</div></div><div class="price-controls-container"><div class="item-price">₹200</div><div class="item-controls" data-name="Veg. Schezwan." data-price="200"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
+                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Veg. Manchurian.</div></div><div class="price-controls-container"><div class="item-price">₹190</div><div class="item-controls" data-name="Veg. Manchurian." data-price="190"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
+                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Veg. In Hot Garlic Sauce</div></div><div class="price-controls-container"><div class="item-price">₹190</div><div class="item-controls" data-name="Veg. In Hot Garlic Sauce" data-price="190"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
                         <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Veg. Chow Chow</div></div><div class="price-controls-container"><div class="item-price">₹190</div><div class="item-controls" data-name="Veg. Chow Chow" data-price="190"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
                         <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Paneer Manchurian</div></div><div class="price-controls-container"><div class="item-price">₹200</div><div class="item-controls" data-name="Paneer Manchurian" data-price="200"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
                         <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Paneer Chilly</div></div><div class="price-controls-container"><div class="item-price">₹200</div><div class="item-controls" data-name="Paneer Chilly" data-price="200"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
@@ -903,113 +1101,20 @@
                         <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Veg. Chilly</div></div><div class="price-controls-container"><div class="item-price">₹200</div><div class="item-controls" data-name="Veg. Chilly" data-price="200"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
                         <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Veg. Spring Roll</div></div><div class="price-controls-container"><div class="item-price">₹200</div><div class="item-controls" data-name="Veg. Spring Roll" data-price="200"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
                         <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Veg. American Chopsy</div></div><div class="price-controls-container"><div class="item-price">₹200</div><div class="item-controls" data-name="Veg. American Chopsy" data-price="200"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
-                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Chicken American Chopsy</div></div><div class="price-controls-container"><div class="item-price">₹220</div><div class="item-controls" data-name="Chicken American Chopsy" data-price="220"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
-                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Chicken Hakka Noodles</div></div><div class="price-controls-container"><div class="item-price">₹210</div><div class="item-controls" data-name="Chicken Hakka Noodles" data-price="210"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
-                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Veg. Hakka Noodles.</div></div><div class="price-controls-container"><div class="item-price">₹200</div><div class="item-controls" data-name="Veg. Hakka Noodles." data-price="200"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
-                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Chicken Chowmein.</div></div><div class="price-controls-container"><div class="item-price">₹190</div><div class="item-controls" data-name="Chicken Chowmein." data-price="190"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
-                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Veg. Fried Rice</div></div><div class="price-controls-container"><div class="item-price">₹210</div><div class="item-controls" data-name="Veg. Fried Rice" data-price="210"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
-                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Veg. Schezwan Fried Rice.</div></div><div class="price-controls-container"><div class="item-price">₹180</div><div class="item-controls" data-name="Veg. Schezwan Fried Rice." data-price="180"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
-                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Chicken Fried Rice</div></div><div class="price-controls-container"><div class="item-price">₹200</div><div class="item-controls" data-name="Chicken Fried Rice" data-price="200"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
-                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Chicken Schezwan Fried Rice.</div></div><div class="price-controls-container"><div class="item-price">₹210</div><div class="item-controls" data-name="Chicken Schezwan Fried Rice." data-price="210"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
-                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Veg. Tripple Rice.</div></div><div class="price-controls-container"><div class="item-price">₹220</div><div class="item-controls" data-name="Veg. Tripple Rice." data-price="220"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
-                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Veg. Tripple Schezwan Fried Rice</div></div><div class="price-controls-container"><div class="item-price">₹250</div><div class="item-controls" data-name="Veg. Tripple Schezwan Fried Rice" data-price="250"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
-                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Chicken Tripple Schezwan Rice</div></div><div class="price-controls-container"><div class="item-price">₹260</div><div class="item-controls" data-name="Chicken Tripple Schezwan Rice" data-price="260"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
+                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Chicken American Chopsy</div></div><div class="price-controls-container"><div class="item-price">₹210</div><div class="item-controls" data-name="Chicken American Chopsy" data-price="210"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
+                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Chicken Hakka Noodles</div></div><div class="price-controls-container"><div class="item-price">₹200</div><div class="item-controls" data-name="Chicken Hakka Noodles" data-price="200"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
+                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Veg. Hakka Noodles.</div></div><div class="price-controls-container"><div class="item-price">₹190</div><div class="item-controls" data-name="Veg. Hakka Noodles." data-price="190"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
+                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Chicken Chowmein.</div></div><div class="price-controls-container"><div class="item-price">₹210</div><div class="item-controls" data-name="Chicken Chowmein." data-price="210"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
+                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Veg. Fried Rice</div></div><div class="price-controls-container"><div class="item-price">₹180</div><div class="item-controls" data-name="Veg. Fried Rice" data-price="180"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
+                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Veg. Schezwan Fried Rice.</div></div><div class="price-controls-container"><div class="item-price">₹200</div><div class="item-controls" data-name="Veg. Schezwan Fried Rice." data-price="200"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
+                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Chicken Fried Rice</div></div><div class="price-controls-container"><div class="item-price">₹210</div><div class="item-controls" data-name="Chicken Fried Rice" data-price="210"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
+                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Chicken Schezwan Fried Rice.</div></div><div class="price-controls-container"><div class="item-price">₹220</div><div class="item-controls" data-name="Chicken Schezwan Fried Rice." data-price="220"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
+                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Veg. Tripple Rice.</div></div><div class="price-controls-container"><div class="item-price">₹250</div><div class="item-controls" data-name="Veg. Tripple Rice." data-price="250"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
+                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Veg. Tripple Schezwan Fried Rice</div></div><div class="price-controls-container"><div class="item-price">₹260</div><div class="item-controls" data-name="Veg. Tripple Schezwan Fried Rice" data-price="260"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
+                        <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Chicken Tripple Schezwan Rice</div></div><div class="price-controls-container"><div class="item-price">₹280</div><div class="item-controls" data-name="Chicken Tripple Schezwan Rice" data-price="280"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
                         <li class="menu-list-item"><div class="menu-item-info"><div class="menu-item-name">Egg Fried Rice</div></div><div class="price-controls-container"><div class="item-price">₹200</div><div class="item-controls" data-name="Egg Fried Rice" data-price="200"><button class="add-to-cart-btn" onclick="addToCart(this)">Add</button></div></div></li>
                     </ul>
                 </div>
-                <div class="menu-section">
-                    <h2 class="section-title" style="color: #006400;">COLD DRINKS</h2>
-                <ul class="menu-list">
-                    <li class="menu-list-item">
-                        <div class="menu-item-info">
-                            <div class="menu-item-name">Mineral Water (1 Ltr. / 500 Ml.)</div>
-                        </div>
-                        <div class="price-controls-container">
-                            <div class="item-price">₹200</div>
-                            <div class="item-controls" data-name="Mineral Water (1 Ltr. / 500 Ml.)" data-price="200">
-                                <button class="add-to-cart-btn" onclick="addToCart(this)">Add</button>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="menu-list-item">
-                        <div class="menu-item-info">
-                            <div class="menu-item-name">Fresh Lime Water</div>
-                        </div>
-                        <div class="price-controls-container">
-                            <div class="item-price">₹30 / ₹20</div>
-                            <div class="item-controls" data-name="Fresh Lime Water" data-price="30">
-                                <button class="add-to-cart-btn" onclick="addToCart(this)">Add</button>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="menu-list-item">
-                        <div class="menu-item-info">
-                            <div class="menu-item-name">Soda</div>
-                        </div>
-                        <div class="price-controls-container">
-                            <div class="item-price">₹30</div>
-                            <div class="item-controls" data-name="Soda" data-price="30">
-                                <button class="add-to-cart-btn" onclick="addToCart(this)">Add</button>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="menu-list-item">
-                        <div class="menu-item-info">
-                            <div class="menu-item-name">Soda (500 Ml.)</div>
-                        </div>
-                        <div class="price-controls-container">
-                            <div class="item-price">₹25</div>
-                            <div class="item-controls" data-name="Soda (500 Ml.)" data-price="25">
-                                <button class="add-to-cart-btn" onclick="addToCart(this)">Add</button>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="menu-list-item">
-                        <div class="menu-item-info">
-                            <div class="menu-item-name">Fresh Lime Soda</div>
-                        </div>
-                        <div class="price-controls-container">
-                            <div class="item-price">₹35</div>
-                            <div class="item-controls" data-name="Fresh Lime Soda" data-price="35">
-                                <button class="add-to-cart-btn" onclick="addToCart(this)">Add</button>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="menu-list-item">
-                        <div class="menu-item-info">
-                            <div class="menu-item-name">Soft Drinks</div>
-                        </div>
-                        <div class="price-controls-container">
-                            <div class="item-price">₹35</div>
-                            <div class="item-controls" data-name="Soft Drinks" data-price="35">
-                                <button class="add-to-cart-btn" onclick="addToCart(this)">Add</button>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="menu-list-item">
-                        <div class="menu-item-info">
-                            <div class="menu-item-name">Soft Drinks (500 ML.)</div>
-                        </div>
-                        <div class="price-controls-container">
-                            <div class="item-price">₹60</div>
-                            <div class="item-controls" data-name="Soft Drinks (500 ML.)" data-price="60">
-                                <button class="add-to-cart-btn" onclick="addToCart(this)">Add</button>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="menu-list-item">
-                        <div class="menu-item-info">
-                            <div class="menu-item-name">Lassi (Sweet & Salted)</div>
-                        </div>
-                        <div class="price-controls-container">
-                            <div class="item-price">₹50</div>
-                            <div class="item-controls" data-name="Lassi (Sweet & Salted)" data-price="50">
-                                <button class="add-to-cart-btn" onclick="addToCart(this)">Add</button>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
         </div>
         </div>
         
@@ -1023,7 +1128,6 @@
                 </div>
             </div>
             <div class="screen-content">
-                <div class="screen-content">
                     <!-- WHISKY SECTION -->
                     <div class="menu-section">
                         <h2 class="section-title">WHISKY</h2>
@@ -1922,7 +2026,6 @@
                     </div>
                 </div>
             </div>
-        </div>
         
         <!-- Cart Screen -->
         <div id="cart-screen" class="screen">
@@ -1946,7 +2049,6 @@
                     </div>
                     <button class="order-btn" onclick="placeOrder()">Place Order</button>
                 </div>
-            </div>
         </div>
         
         <!-- Offers Screen -->
